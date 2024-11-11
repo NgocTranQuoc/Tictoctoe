@@ -8,7 +8,7 @@ jobs:
     needs: [setup-build]
     steps:
       name: Run Unit Test
-        run: yarn test
+      - run: yarn test
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
