@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     borderWidth: 0.5,
   },
   icon: {
-    height: 62,
-    width: 62,
+    height: 64,
+    width: 64,
   },
 });
