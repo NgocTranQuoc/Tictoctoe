@@ -3,9 +3,7 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
   code-qualify:
-    name: Code Qualify
     runs-on: react-native
-    needs: [setup-build]
     steps:
       name: Run Unit Test
       - run: yarn test
