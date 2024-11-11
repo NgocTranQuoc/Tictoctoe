@@ -17,7 +17,7 @@ on:
 jobs:
   run-test:
     name: Run Unit Test
-    runs-on: react-native
+    runs-on: macos-latest
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
