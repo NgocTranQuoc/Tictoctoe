@@ -2,6 +2,19 @@ name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
+setup-build:
+    name: Setup Build Environment
+    runs-on: react-native
+    steps:
+      - name: Yarn Install
+        run: yarn install
+  code-qualify:
+    name: Code Qualify
+    runs-on: react-native
+    needs: [setup-build]
+    steps:
+      - name: Run Unit Test
+        run: yarn test
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
